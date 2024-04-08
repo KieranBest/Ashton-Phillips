@@ -29,7 +29,7 @@ export const Header = () => {
         <Disclosure as="nav" className="bg-black sticky top-0 z-10">
             {({ open }) => (
                 <>
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl px-2">
                     <div className="relative flex h-[8vh]">
                         {/* Mobile */}
                         <div className="absolute inset-y-0 left-0 flex items-center">
