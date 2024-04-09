@@ -14,20 +14,20 @@ export default function Carousel({ slides }) {
     };
 
     return (
-    <div className="overflow-hidden relative">
-        <div className={`flex transition ease-out duration-40`} style={{
+    <div className="overflow-hidden relative w-1/4">
+        <div className="flex transition ease-out duration-1000 bg-white" style={{
                 transform: `translateX(-${current * 100}%)`,
             }}>
             {slides.map((s, index) => {
                 return (
-                    <video key={index}  width="250" height="500" playsInline autoPlay muted loop>
+                    <video key={index} className="rounded-3xl" playsInline autoPlay muted loop>
                     <source src={s} type="video/mp4" />
                     </video>
                 );
             })}
         </div>
 
-        <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
+        <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-2 text-3xl">
             <button onClick={previousSlide}>
                 <BsFillArrowLeftCircleFill />
             </button>

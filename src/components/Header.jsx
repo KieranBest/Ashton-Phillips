@@ -5,6 +5,9 @@ import { useLocation } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', href: '/', current: false },
+    { name: 'About', href: '#about', current: false },
+    { name: 'Videos', href: '#video', current: false },
+    { name: 'Contact', href: '#contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -26,13 +29,13 @@ export const Header = () => {
     }
 
     return (
-        <Disclosure as="nav" className="bg-black sticky top-0 z-10">
+        <Disclosure as="nav" className="bg-black sticky top-0 z-[9999]">
             {({ open }) => (
                 <>
-                <div className="mx-auto max-w-7xl px-2">
-                    <div className="relative flex h-[8vh]">
+                <div className="">
+                    <div className="flex h-[8vh] w-fullgrid grid-cols-2 gap-4 content-start px-8">
                         {/* Mobile */}
-                        <div className="absolute inset-y-0 left-0 flex items-center">
+                        <div className="absolute inset-y-0 left-10 flex items-center">
                             <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                 <span className="absolute -inset-0.5" />
                                 <span className="sr-only">Open main menu</span>
@@ -43,19 +46,22 @@ export const Header = () => {
                                 )}
                             </Disclosure.Button>
                         </div>
+                        <div className="absolute inset-y-0 right-10 flex items-center text-white">
+                            <p className="text-xl">Ashton Phillips</p>
+                        </div>
                     </div>
                 </div>
 
-                {/* Mobile drop down */}
+                {/* drop down */}
                 <Disclosure.Panel>
-                    <div className="space-y-1 px-2 pb-3 pt-2">
+                    <div className="space-y-1 px-2 left-10 pb-3 pt-1 absolute sm:w-1/4 w-full">
                         {navigation.map((item) => (
                             <Disclosure.Button
                                 key={item.name}
                                 as="a"
                                 href={item.href}
                                 className={classNames(
-                                    item.current ? 'bg-red-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                    item.current ? 'bg-red-900 text-white text-center' :  'bg-white text-gray-700 hover:bg-gray-700 hover:text-white text-center',
                                     'block rounded-md px-3 py-2 text-base font-medium'
                                 )}
                                 aria-current={item.current ? 'page' : undefined}
