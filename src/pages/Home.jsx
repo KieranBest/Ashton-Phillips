@@ -3,6 +3,7 @@ import React from "react";
 import { Intro } from "../components/home/Intro";
 import { About } from "../components/home/About";
 import { Videos } from "../components/home/Videos";
+import { Contact } from "../components/home/Contact";
 
 export const Home = () => {
     return (
@@ -10,6 +11,7 @@ export const Home = () => {
             < Intro />
             < About />
             < Videos />
+            < Contact />
         </div>
     );
 };
