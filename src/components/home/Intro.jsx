@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 export const Intro = () => {
     return (
-        <section className="z-0" id="intro">
+        <section className="z-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 mx-">
                 <div className="m-2">
                     <img className="object-cover object-top w-full h-[44vh] max-w-full rounded-lg" src={getImageUrl("21.jpg")} alt="Ashton Phillips" />

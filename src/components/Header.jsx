@@ -4,39 +4,22 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useLocation } from 'react-router-dom';
 
 const navigation = [
-    { name: 'Home', href: '#intro', current: false },
-    { name: 'About', href: '#about', current: false },
-    { name: 'Gallery', href: '#gallery', current: false },
-    { name: 'Contact', href: '#contact', current: false },
+    { name: 'Home', href: '#intro' },
+    { name: 'About', href: '#about' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Contact', href: '#contact' },
 ]
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
-function getCurrentLocation() {
-    const location = useLocation();
-    return location.pathname;
-}
-
 export const Header = () => {
-    switch (getCurrentLocation()) {
-        case '/':
-            navigation[0].current = true;
-            break;
-        default:
-            break;
-    }
-
     return (
         <Disclosure as="nav" className="bg-black sticky top-0 z-[9999]">
             {({ open }) => (
                 <>
-                <div className="">
+                <div>
                     <div className="flex h-[8vh] w-fullgrid grid-cols-2 gap-4 content-start px-8">
                         {/* Mobile */}
                         <div className="absolute inset-y-0 left-10 flex items-center">
-                            <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                 <span className="absolute -inset-0.5" />
                                 <span className="sr-only">Open main menu</span>
                                 {open ? (
