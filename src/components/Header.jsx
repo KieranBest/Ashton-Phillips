@@ -47,7 +47,7 @@ export const Header = () => {
                             </Disclosure.Button>
                         </div>
                         <div className="absolute inset-y-0 right-10 flex items-center text-white">
-                            <p className="text-xl">Ashton Phillips</p>
+                            <a href="/" className="text-xl hover:text-red-600">Ashton Phillips</a>
                         </div>
                     </div>
                 </div>
