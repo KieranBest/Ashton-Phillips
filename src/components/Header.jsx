@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 const navigation = [
     { name: 'Home', href: '#intro', current: false },
     { name: 'About', href: '#about', current: false },
-    { name: 'Videos', href: '#video', current: false },
+    { name: 'Gallery', href: '#gallery', current: false },
     { name: 'Contact', href: '#contact', current: false },
 ]
 
@@ -54,16 +54,13 @@ export const Header = () => {
 
                 {/* drop down */}
                 <Disclosure.Panel>
-                    <div className="space-y-1 px-2 left-10 pb-3 pt-1 absolute sm:w-1/4 w-full">
+                    <div className="space-y-1 px-2 left-10 pb-3 pt-1 absolute sm:w-1/4 w-1/2">
                         {navigation.map((item) => (
                             <Disclosure.Button
                                 key={item.name}
                                 as="a"
                                 href={item.href}
-                                className={classNames(
-                                    item.current ? 'bg-red-900 text-white text-center' :  'bg-white text-gray-700 hover:bg-gray-700 hover:text-white text-center',
-                                    'block rounded-md px-3 py-2 text-base font-medium'
-                                )}
+                                className="bg-white text-gray-700 hover:bg-red-600 hover:text-white text-center block rounded-md px-3 py-2 text-base font-medium"
                                 aria-current={item.current ? 'page' : undefined}
                                 >
                                 {item.name}
