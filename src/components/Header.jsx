@@ -36,21 +36,21 @@ export const Header = () => {
                 <Transition
                     show={open}
                     enter="transition duration-1000 ease-out"
-                    enterFrom="transform scale-95 opacity-0"
+                    enterFrom="transform scale-50 opacity-0"
                     enterTo="transform scale-100 opacity-100"
-                    leave="transition duration-100 ease-out"
+                    leave="transition duration-500 ease-out"
                     leaveFrom="transform scale-100 opacity-100"
-                    leaveTo="transform scale-95 opacity-0"
+                    leaveTo="transform scale-50 opacity-0"
                 >
                     {/* drop down */}
                     <Disclosure.Panel>
-                        <div className="space-y-1 px-2 left-10 pb-3 pt-1 absolute sm:w-1/4 w-1/2">
+                        <div className="space-y-1 px-2 left-10 pb-3 pt-1 absolute w-1/2">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
                                     as="a"
                                     href={item.href}
-                                    className="bg-white text-gray-700 hover:bg-red-600 hover:text-white text-center block rounded-md px-3 py-2 text-base font-medium"
+                                    className="bg-white text-gray-700 hover:bg-red-600 hover:text-white text-center block rounded-md px-3 py-2 text-lg font-medium"
                                     >
                                     {item.name}
                                 </Disclosure.Button>

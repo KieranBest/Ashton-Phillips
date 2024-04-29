@@ -8,7 +8,7 @@ export const Gallery = () => {
         <section id="gallery">
             <div className="w-full px-4 pt-20">
                 <div className="text-center py-10">
-                    <h1 className="">Gallery</h1>
+                    <h1 className="text-lg">Gallery</h1>
                     <h2 className="text-4xl  underline underline-offset-4 text-red-600">Photos</h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
