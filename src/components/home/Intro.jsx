@@ -31,7 +31,7 @@ export const Intro = () => {
                     <img className="object-cover object-top w-full h-[44vh] max-w-full rounded-lg hidden lg:block" src={getImageUrl("11.jpg")} alt="Ashton Phillips 11" loading=" lazy" />
                 </div>
             </div>
-            <div className='absolute text-2xl sm:text-3xl md:text-5xl lg:text-7xl justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='absolute text-2xl sm:text-3xl md:text-5xl lg:text-7xl justify-center top-1/2 pt-20 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                 <h1 className='text-red-600 text-center text-8xl'>Ashton Phillips</h1>
             </div>
         </section>

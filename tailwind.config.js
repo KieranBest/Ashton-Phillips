@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         dm: ['DM Serif Display', 'sans-serif'],
+        yellowtail: ['Yellowtail', 'Static']
       },
     },
   },
