@@ -8,7 +8,7 @@ export const About = () => {
             <div className="pt-20 w-full h-[60vh] py-4 relative overflow-hidden">
                 <img src={getImageUrl("37.jpg")} 
                     className="w-full h-full object-cover object-center absolute mix-blend-overlay rounded-lg px-6" 
-                    alt="Ashton Phillips 37" loading=" lazy" />
+                    alt="Ashton Phillips 37" loading="lazy" />
                 <div className="text-wrap flex h-full sm:w-[50%] px-6 opacity-90">
                     <div className=" m-auto text-center">
                         <div className="pb-5">
