@@ -10,7 +10,7 @@ export const About = () => {
                     className="w-full h-full object-cover object-center absolute mix-blend-overlay rounded-lg px-6" 
                     alt="Ashton Phillips 37" loading="lazy" />
                 <div className="text-wrap flex h-full sm:w-[50%] px-6 opacity-90">
-                    <div className=" m-auto text-center">
+                    <div className="m-auto text-center">
                         <div className="pb-5">
                             <h1 className="text-4xl underline underline-offset-4 pb-1 text-red-600">About Me</h1>
                             <h2 className="text-lg">Who I Am</h2>
